@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+
+<body>
+    <h1 style="color: chartreuse; text-align: center; background-color: crimson;">Magic Button</h1>
+    <div id="d1">
+        <button style="width: 100px;
+        align-self: center;
+        align-content: center;
+        align-content: center;
+        height: 70px;
+        background-color:bisque;
+        color:darkolivegreen;
+        text-align:center;" onmouseover="changeColor()">magic button</button>
+        <div id="d2">
+            <button style="width: 100px;
+            align-self: center;
+            align-content: center;
+            align-content: center;
+            height: 70px;
+            background-color:rgb(22, 151, 104);
+            color:rgb(80, 68, 155);
+            text-align:center;" onmouseover="alertUser()">magic button</button>
+    </div>
+    <script>
+        function changeColor() {
+            d1.innerHTML = d1.innerHTML + '<button style="color: darkgreen;background-color: blueviolet;">blue</button>'
+            d1.innerHTML = d1.innerHTML + '<button style="color: blue;background-color: red;">red</button>'
+            d1.innerHTML = d1.innerHTML + '<button style="color: yellow;background-color: aqua;">aqua</button>'
+            d1.innerHTML = d1.innerHTML + '<button style="color: pink;background-color: orange;">orange</button>'
+            d1.innerHTML = d1.innerHTML + '<button style="color: purple;background-color: gray;">gray</button>'
+            d1.innerHTML = d1.innerHTML + '<button style="color: brown;background-color: green;">green</button>'
+            console.log("You are on the mouse!");
+        }
+        function alertUser(){
+            d2.innerHTML = d2.innerHTML + '<h1>magic</h1>'
+            alert("Stop clicking")
+            alert("This button is dangerous")
+            console.log("You are clicking the magic button");
+            console.log("This is extremely dangerous!");
+        }
+
+    </script>
+</body>
+
+</html>
